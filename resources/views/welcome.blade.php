@@ -64,6 +64,7 @@
             }
         </style>
     </head>
+    {!! QrCode::generate('Make me into a QrCode!'); !!}
     <body>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
@@ -92,4 +93,5 @@
             </div>
         </div>
     </body>
+
 </html>
