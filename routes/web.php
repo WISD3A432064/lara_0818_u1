@@ -14,4 +14,9 @@
 Route::get('/', function () {
     //throw new\Exception('Tracyworks!');
     return view('welcome');
-});
+})->middleware(checkage::class);
+
+Route::get('/home', function () {
+
+    return view('welcome');
+})->name("home");
