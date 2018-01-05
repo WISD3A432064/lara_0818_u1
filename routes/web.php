@@ -12,6 +12,6 @@
 */
 
 Route::get('/', function () {
-    throw new\Exception('Tracyworks!');
-    //return view('welcome');
+    //throw new\Exception('Tracyworks!');
+    return view('welcome');
 });
