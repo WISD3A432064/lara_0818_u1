@@ -20,3 +20,5 @@ Route::get('/home', function () {
 
     return view('welcome');
 })->name("home");
+
+Route::get('mail', 'MailController@getSend');
