@@ -22,3 +22,7 @@ Route::get('/home', function () {
 })->name("home");
 
 Route::get('mail', 'MailController@getSend');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
