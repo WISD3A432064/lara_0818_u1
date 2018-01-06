@@ -60,6 +60,8 @@
                                 </a>
                             </div>
                         </div>
+                        <a href="{{ route('social.redirect', ['provider' => 'google']) }}" class="btn btn-lg btn-danger btn-block">Google</a>
+                        <a href="{{ route('social.redirect', ['provider' => 'github']) }}" class="btn btn-lg btn-danger btn-block">GitHUb</a>
                     </form>
                 </div>
             </div>
