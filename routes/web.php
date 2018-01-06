@@ -31,9 +31,9 @@ Route::group(['prefix'=>'login/social','middleware'=>['guest']],
     function(){
     Route::get('{provider}/redirect',[
         'as' => 'social.redirect',
-        'uses' => 'Auth\SocialController@getSocialRedirect'   ]);
+        'uses' => 'SocialController@getSocialRedirect'   ]);
     Route::get('{provider}/callback',[
         'as' => 'social.handle',
-        'uses' => 'Auth\SocialController@getSocialCallback'
+        'uses' => 'SocialController@getSocialCallback'
     ]);
 });

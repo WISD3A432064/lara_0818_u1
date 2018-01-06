@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+//use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\User;
 use App\SocialUser;
 use App;
 use Auth;
+use Illuminate\Support\Facades\Config;
 use Redirect;
-use Config;
+
 use Socialite;
 
 
